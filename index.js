@@ -8,7 +8,8 @@ app.use(express.json());
 // mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/skDB?retryWrites=true&w=majority
 mongoose
   .connect(
-    "mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/skDB?retryWrites=true&w=majority",
+    // "mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/skDB?retryWrites=true&w=majority",
+    "mongodb://0.0.0.0:27017/Project_1",
     {
       useNewUrlParser: true,
     }
