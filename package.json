@@ -1,0 +1,26 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "Repository for backend cohort - Lithium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raider0007/Project_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raider0007/Project_1/issues"
+  },
+  "homepage": "https://github.com/raider0007/Project_1#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
+}
