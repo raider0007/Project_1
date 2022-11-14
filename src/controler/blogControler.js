@@ -1,35 +1,81 @@
 const blogModel = require("../Model/blogModel");
+const authorModel = require("../Model/authorModel");
 
 exports.createBlog = async (req, res) => {
   try {
+    await authorModel.findById(req.body.authorId);
     const blogs = await blogModel.create(req.body);
     res.status(201).json({
-      status: "successful",
-      blogs,
+      status: true,
+      data: blogs,
     });
   } catch (error) {
     res.status(400).json({
-      status: "invalid request",
-      error,
+      status: "error",
+      error: error.message,
     });
   }
 };
 
 exports.getAllBlogs = async (req, res) => {
-  const { authorId, category, tags, subcategory } = req.query;
-  console.log(authorId, category, tags, subcategory);
   try {
-    const blogs = await blogModel
-      .find({ isDeleted: false })
-      .populate("authorId");
-    res.status(201).json({
-      status: "successful",
+    const blogs = await blogModel.find(req.query); //.populate("authorId");
+    res.status(200).json({
+      status: true,
       result: `${blogs.length} blogs found!`,
       blogs,
     });
   } catch (error) {
     res.status(404).json({
-      status: "fail due to server error",
+      status: "Not found",
+      error: error.message,
+    });
+  }
+};
+
+exports.updateBlog = async (req, res) => {
+  req.body.isPublished = true;
+  req.body.publishedAt = new Date();
+  try {
+    const blog = await blogModel.findOneAndUpdate(
+      { _id: req.params.blogId, isDeleted: false },
+      {
+        $set: req.body,
+      },
+      {
+        new: true,
+      }
+    );
+    res.status(200).json({
+      status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
+      data: blog,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      error,
+    });
+  }
+};
+
+exports.deleteBlog = async (req, res) => {
+  try {
+    const blog = await blogModel.findOneAndUpdate(
+      { _id: req.params.blogId, isDeleted: false },
+      {
+        $set: { isDeleted: true },
+      },
+      {
+        new: true,
+      }
+    );
+    res.status(200).json({
+      status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
+      data: blog,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
       error,
     });
   }

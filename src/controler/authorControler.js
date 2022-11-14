@@ -1,7 +1,6 @@
 const authorModel = require("../Model/authorModel");
 
 exports.createAuthor = async (req, res) => {
-    console.log(req.body);
   try {
     const authors = await authorModel.create(req.body);
     res.status(201).json({
@@ -10,7 +9,7 @@ exports.createAuthor = async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({
-      status: "fail due to server error",
+      status: false,
       error: error.message,
     });
   }

@@ -16,12 +16,18 @@ const blogSchema = mongoose.Schema({
     ref: "Author",
     required: true,
   },
-  tags: [String],
+  tags: {
+    type: [String],
+    unique: true,
+  },
   category: {
     type: String,
     required: [true, "Please enter the category of blog"],
   },
-  subcategory: [String],
+  subcategory: {
+    type: [String],
+    unique: true,
+  },
   deletedAt: Date,
   isDeleted: {
     type: Boolean,

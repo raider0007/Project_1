@@ -2,21 +2,16 @@ const express = require("express");
 const router = express.Router();
 const authors = require("../controler/authorControler");
 const blogs = require("../controler/blogControler");
-
-router.get("/test-me", (req, res) => {
-  console.log(req.body);
-  res.send("Hello World!!");
-});
+const blogModel = require("../Model/blogModel");
 
 router.post("/authors", authors.createAuthor);
 
-router.post("/blog", blogs.createBlog);
+router.post("/blogs", blogs.createBlog);
 
-router.get("/blog", blogs.getAllBlogs);
+router.get("/blogs", blogs.getAllBlogs);
 
-router.patch("/blog", (req, res) => {
-  console.log(req.body);
-  res.send("Blog-patch");
-});
+router.put("/blogs/:blogId", blogs.updateBlog);
+
+router.delete("/blogs/:blogId", blogs.deleteBlog);
 
 module.exports = router;
