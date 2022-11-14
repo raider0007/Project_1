@@ -48,7 +48,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions--3 … no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1eba",
         "tags": [
@@ -64,7 +64,7 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Softbank boss-3 Masayoshi Son devotes himself to growing ARM for the next few years",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
         "authorId": "6371fd7da12b1f70beca1ebb",
         "tags": [
@@ -80,7 +80,7 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third party Play store payments eases further with US tests",
+        "title": "Google's resistance-3 to third party Play store payments eases further with US tests",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
         "authorId": "6371fd7da12b1f70beca1ebb",
         "tags": [
@@ -96,7 +96,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …4 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebb",
         "tags": [
@@ -112,7 +112,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …5 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebb",
         "tags": [
@@ -128,7 +128,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …6 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebc",
         "tags": [
@@ -144,7 +144,7 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Softbank boss Masayoshi6 Son devotes himself to growing ARM for the next few years",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
         "authorId": "6371fd7da12b1f70beca1ebc",
         "tags": [
@@ -153,14 +153,13 @@
         ],
         "category": "travel",
         "subcategory": [
-            "Environmental",
             "Environmental"
         ],
         "isDeleted": false,
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third party Play store payments eases further with US tests",
+        "title": "Google's resistance to5 third party Play store payments eases further with US tests",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
         "authorId": "6371fd7da12b1f70beca1ebc",
         "tags": [
@@ -169,14 +168,13 @@
         ],
         "category": "travel",
         "subcategory": [
-            "Feminist",
             "Feminist"
         ],
         "isDeleted": false,
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …7 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebc",
         "tags": [
@@ -192,7 +190,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …8 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1eba",
         "tags": [
@@ -208,7 +206,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions … 9no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebd",
         "tags": [
@@ -224,7 +222,7 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Softbank boss Masayoshi Son0 devotes himself to growing ARM for the next few years",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
         "authorId": "6371fd7da12b1f70beca1ebd",
         "tags": [
@@ -240,7 +238,7 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third party Play store payments eases further with US tests",
+        "title": "Google's resistance to third8 party Play store payments eases further with US tests",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
         "authorId": "6371fd7da12b1f70beca1ebd",
         "tags": [
@@ -256,7 +254,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …11 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebd",
         "tags": [
@@ -272,7 +270,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …12 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebd",
         "tags": [
@@ -281,14 +279,13 @@
         ],
         "category": "personal",
         "subcategory": [
-            "Feminist",
             "Feminist"
         ],
         "isDeleted": false,
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …13 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebb",
         "tags": [
@@ -304,23 +301,21 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Softbank boss Masayoshi Son4 devotes himself to growing ARM for the next few years",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
         "authorId": "6371fd7da12b1f70beca1ebe",
         "tags": [
-            "Beauty",
             "Beauty"
         ],
         "category": "business",
         "subcategory": [
-            "Feminist",
             "Feminist"
         ],
         "isDeleted": false,
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third party Play store payments eases further with US tests",
+        "title": "Google's resistance to third111 party Play store payments eases further with US tests",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
         "authorId": "6371fd7da12b1f70beca1ebe",
         "tags": [
@@ -336,23 +331,21 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …124 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebe",
         "tags": [
-            "Beauty",
             "Beauty"
         ],
         "category": "business",
         "subcategory": [
-            "Law",
             "Law"
         ],
         "isDeleted": false,
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …32 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebe",
         "tags": [
@@ -368,7 +361,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …51 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebc",
         "tags": [
@@ -384,7 +377,7 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Just follow the instructions …42 no wait, not that instruction to lock everyone out of everything",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
         "authorId": "6371fd7da12b1f70beca1ebe",
         "tags": [

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+// USING VALIDATOR LIBRARY
 const validator = require("validator");
 
 const authorSchema = mongoose.Schema(
@@ -26,6 +27,7 @@ const authorSchema = mongoose.Schema(
       required: [true, "Please enter your mail id!"],
       lowercase: true,
       trim: true,
+      // VALIDATION OF EMAIL USING VALIDATOR LIB
       validate: [validator.isEmail, "Please provide a valid email!"],
     },
     password: {

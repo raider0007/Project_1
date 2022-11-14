@@ -3,7 +3,7 @@ const authorModel = require("../Model/authorModel");
 
 exports.createBlog = async (req, res) => {
   try {
-    await authorModel.findById(req.body.authorId);
+    // await authorModel.findById(req.body.authorId);
     const blogs = await blogModel.create(req.body);
     res.status(201).json({
       status: true,
@@ -72,6 +72,25 @@ exports.deleteBlog = async (req, res) => {
     res.status(200).json({
       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
       data: blog,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      error,
+    });
+  }
+};
+
+exports.deleteBlogQuery = async (req, res) => {
+  try {
+    const blogs = await blogModel.updateMany(
+      req.query,
+      { isDeleted: true },
+      { new: true }
+    );
+    res.status(200).json({
+      status: `${blogs.modifiedCount} blog deleted success!`,
+      data: blogs,
     });
   } catch (error) {
     res.status(404).json({
