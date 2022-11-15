@@ -19,7 +19,7 @@ exports.createBlog = async (req, res) => {
 
 exports.getAllBlogs = async (req, res) => {
   try {
-    const blogs = await blogModel.find(req.query); //.populate("authorId");
+    const blogs = await blogModel.find(req.query).populate("authorId");
     res.status(200).json({
       status: true,
       result: `${blogs.length} blogs found!`,
@@ -33,31 +33,6 @@ exports.getAllBlogs = async (req, res) => {
   }
 };
 
-// exports.updateBlog = async (req, res) => {
-//   req.body.isPublished = true;
-//   req.body.publishedAt = new Date();
-//   try {
-//     const blog = await blogModel.findOneAndUpdate(
-//       { _id: req.params.blogId, isDeleted: false },
-//       {
-//         $set: req.body,
-//       },
-//       {
-//         new: true,
-//       }
-//     );
-//     res.status(200).json({
-//       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
-//       data: blog,
-//     });
-//   } catch (error) {
-//     res.status(404).json({
-//       status: "fail",
-//       error,
-//     });
-//   }
-// };
-
 exports.updateBlog = async (req, res) => {
   req.body.isPublished = true;
   req.body.publishedAt = new Date();
@@ -65,7 +40,7 @@ exports.updateBlog = async (req, res) => {
     const blog = await blogModel.find({
       _id: req.params.blogId,
       isDeleted: false,
-    });
+    }).populate("authorId");
     for (const key in req.body) {
       if (key === "tags" || key === "subcategory") {
         if (!blog[0][key].includes(req.body[key])) {

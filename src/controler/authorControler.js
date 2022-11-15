@@ -15,9 +15,25 @@ exports.createAuthor = async (req, res) => {
   }
 };
 
-exports.loginControler = (req, res) => {
+exports.getAllauthors = async (req, res) => {
+  try {
+    const authors = await authorModel.find();
     res.status(200).json({
-      status: "login success",
-      token: req.body.token,
+      status: "success",
+      result: `${authors.length} authors found`,
+      authors,
     });
-  };
+  } catch (error) {
+    res.status(400).json({
+      status: "error",
+      error,
+    });
+  }
+};
+
+exports.loginControler = (req, res) => {
+  res.status(200).json({
+    status: "login success",
+    token: req.body.token,
+  });
+};

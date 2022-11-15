@@ -9,9 +9,11 @@ const {
 
 router.post("/authors", authors.createAuthor);
 
+router.get("/authors", authors.getAllauthors);
+
 router.post("/blogs", authorAuthorisation, blogs.createBlog);
 
-router.get("/blogs", authorAuthorisation, blogs.getAllBlogs);
+router.get("/blogs", blogs.getAllBlogs);
 
 router.put("/blogs/:blogId", authorAuthorisation, blogs.updateBlog);
 

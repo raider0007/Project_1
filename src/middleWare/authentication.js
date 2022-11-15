@@ -1,5 +1,6 @@
 const authorModel = require("../Model/authorModel");
 const jwt = require("jsonwebtoken");
+const blogModel = require("../Model/blogModel");
 
 exports.authorAuthentication = async (req, res, next) => {
   try {
@@ -25,6 +26,7 @@ exports.authorAuthentication = async (req, res, next) => {
 };
 
 exports.authorAuthorisation = async (req, res, next) => {
+  console.log(req.params);
   try {
     // EXTRACTING TOKEN FROM HEADERS
     const token = req.headers.authorization
@@ -37,19 +39,20 @@ exports.authorAuthorisation = async (req, res, next) => {
         token: token,
       });
     }
-    // IF TOKEN IS THERE THEN CHEKING IS IT A VALID OR NOT
-
+    // FINDING AUTHOR ID WITH BLOG WHICH AUTHOR WANT TO ACCESS (AUTHOR ID OF AUTHOR WITH PERTICULAR BLOG)
+    const blog = await blogModel
+      .findById(req.params.blogId)
+      .populate("authorId");
     // DECODE OF TOKEN
     const decode = await jwt.verify(token, "ekta_rameshwar_jivan_shankar");
     // REMOVING FIELD iat FROM DECODE
     delete decode.iat;
-    // FINDING USER WITH THIS DECODE
-    const user = await authorModel.findOne(decode);
-    // IF USER NOT FOUND SENDING RESPONSE WITH ERROR CODE
-    if (!user) {
+    // CHEKING EMAIL OF TOKEN WITH THE BLOG AUTHOE EMAIL
+    // IF IT FALSE RETURN AUTHORISATION FAIL ERROR
+    if (decode.email !== blog.authorId.email) {
       return res.status(401).json({
         status: "authorisation fail!",
-        error,
+        msg: "Please login whit correct id!",
       });
     }
     // IF EVERYTHING OKAY PASSING CONTROLE TO NEXT FUNCTION
