@@ -17,16 +17,24 @@ const blogSchema = mongoose.Schema({
     required: true,
   },
   tags: {
-    type: [String],
-    unique: true,
+    type: [
+      {
+        type: String,
+        unique: [true, "This tag is already there!"],
+      },
+    ],
   },
   category: {
     type: String,
     required: [true, "Please enter the category of blog"],
   },
   subcategory: {
-    type: [String],
-    unique: true,
+    type: [
+      {
+        type: String,
+        unique: true,
+      },
+    ],
   },
   deletedAt: Date,
   isDeleted: {

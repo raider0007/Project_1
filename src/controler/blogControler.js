@@ -66,15 +66,16 @@ exports.updateBlog = async (req, res) => {
       _id: req.params.blogId,
       isDeleted: false,
     });
-    console.log(blog);
     for (const key in req.body) {
-      console.log(blog[0][key]);
       if (key === "tags" || key === "subcategory") {
-        console.log("Handle it!!");
-        blog[0][key].push(req.body[key]);
-        blog[0].save();
+        if (!blog[0][key].includes(req.body[key])) {
+          blog[0][key].push(req.body[key]);
+        }
+      } else {
+        blog[0][key] = req.body[key];
       }
     }
+    blog[0].save();
     res.status(200).json({
       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
       data: blog,
