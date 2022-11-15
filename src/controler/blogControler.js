@@ -58,29 +58,6 @@ exports.updateBlog = async (req, res) => {
   }
 };
 
-exports.deleteBlog = async (req, res) => {
-  try {
-    const blog = await blogModel.findOneAndUpdate(
-      { _id: req.params.blogId, isDeleted: false },
-      {
-        $set: { isDeleted: true },
-      },
-      {
-        new: true,
-      }
-    );
-    res.status(200).json({
-      status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
-      data: blog,
-    });
-  } catch (error) {
-    res.status(404).json({
-      status: "fail",
-      error,
-    });
-  }
-};
-
 exports.deleteBlogQuery = async (req, res) => {
   try {
     const blogs = await blogModel.updateMany(
