@@ -17,7 +17,7 @@ router.get("/blogs", blogs.getAllBlogs);
 
 router.put("/blogs/:blogId", authorAuthorisation, blogs.updateBlog);
 
-router.delete("/blogs", authorAuthorisation, blogs.deleteBlogQuery);
+router.delete("/blogs/:blogId", authorAuthorisation, blogs.deleteBlogQuery);
 
 // PHASE II
 

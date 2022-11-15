@@ -37,10 +37,12 @@ exports.updateBlog = async (req, res) => {
   req.body.isPublished = true;
   req.body.publishedAt = new Date();
   try {
-    const blog = await blogModel.find({
-      _id: req.params.blogId,
-      isDeleted: false,
-    }).populate("authorId");
+    const blog = await blogModel
+      .find({
+        _id: req.params.blogId,
+        isDeleted: false,
+      })
+      .populate("authorId");
     for (const key in req.body) {
       if (key === "tags" || key === "subcategory") {
         if (!blog[0][key].includes(req.body[key])) {
