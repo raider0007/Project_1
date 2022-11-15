@@ -18,7 +18,7 @@ const authorSchema = mongoose.Schema(
     },
     title: {
       type: String,
-      emun: ["Mr", "Mrs", "Miss"],
+      enum: ["Mr", "Mrs", "Miss"],
       required: [true, "Please enter title for name"],
     },
     email: {
