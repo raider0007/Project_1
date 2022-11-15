@@ -33,19 +33,48 @@ exports.getAllBlogs = async (req, res) => {
   }
 };
 
+// exports.updateBlog = async (req, res) => {
+//   req.body.isPublished = true;
+//   req.body.publishedAt = new Date();
+//   try {
+//     const blog = await blogModel.findOneAndUpdate(
+//       { _id: req.params.blogId, isDeleted: false },
+//       {
+//         $set: req.body,
+//       },
+//       {
+//         new: true,
+//       }
+//     );
+//     res.status(200).json({
+//       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
+//       data: blog,
+//     });
+//   } catch (error) {
+//     res.status(404).json({
+//       status: "fail",
+//       error,
+//     });
+//   }
+// };
+
 exports.updateBlog = async (req, res) => {
   req.body.isPublished = true;
   req.body.publishedAt = new Date();
   try {
-    const blog = await blogModel.findOneAndUpdate(
-      { _id: req.params.blogId, isDeleted: false },
-      {
-        $set: req.body,
-      },
-      {
-        new: true,
+    const blog = await blogModel.find({
+      _id: req.params.blogId,
+      isDeleted: false,
+    });
+    console.log(blog);
+    for (const key in req.body) {
+      console.log(blog[0][key]);
+      if (key === "tags" || key === "subcategory") {
+        console.log("Handle it!!");
+        blog[0][key].push(req.body[key]);
+        blog[0].save();
       }
-    );
+    }
     res.status(200).json({
       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
       data: blog,
