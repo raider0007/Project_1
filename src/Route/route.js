@@ -2,17 +2,20 @@ const express = require("express");
 const router = express.Router();
 const authors = require("../controler/authorControler");
 const blogs = require("../controler/blogControler");
-const { authorAuthentication } = require("../middleWare/authentication");
+const {
+  authorAuthentication,
+  authorAuthorisation,
+} = require("../middleWare/authentication");
 
 router.post("/authors", authors.createAuthor);
 
-router.post("/blogs", blogs.createBlog);
+router.post("/blogs", authorAuthorisation, blogs.createBlog);
 
-router.get("/blogs", blogs.getAllBlogs);
+router.get("/blogs", authorAuthorisation, blogs.getAllBlogs);
 
-router.put("/blogs/:blogId", blogs.updateBlog);
+router.put("/blogs/:blogId", authorAuthorisation, blogs.updateBlog);
 
-router.delete("/blogs", blogs.deleteBlogQuery);
+router.delete("/blogs", authorAuthorisation, blogs.deleteBlogQuery);
 
 // PHASE II
 
