@@ -14,3 +14,10 @@ exports.createAuthor = async (req, res) => {
     });
   }
 };
+
+exports.loginControler = (req, res) => {
+    res.status(200).json({
+      status: "login success",
+      token: req.body.token,
+    });
+  };
