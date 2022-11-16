@@ -26,6 +26,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "bcrypt": "^5.1.0"
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3"
   }
 }

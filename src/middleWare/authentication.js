@@ -17,7 +17,7 @@ exports.authorAuthentication = async (req, res, next) => {
       const passverify = await bcrypt.compare(bodyPass, userPass);
 
       if (!author.isDeleted && passverify) {
-        const token = await jwt.sign(req.body, "ekta_rameshwar_jivan_shankar");
+        const token = await jwt.sign(req.body, `${process.env.SEC_STRING}`);
         req.body.token = token;
         next();
       }
