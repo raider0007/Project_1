@@ -1,8 +1,8 @@
 [
     {
-        "title": "Just follow the instructions … no wait, not that instruction to lock everyone out of everything",
+        "title": "Chetan Bhagat Book - 1",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1eba",
+        "authorId": "6374641277defe8afce184a8",
         "tags": [
             "Bible",
             "Beauty"
@@ -16,9 +16,9 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Chetan Bhagat Book - 2",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
-        "authorId": "6371fd7da12b1f70beca1eba",
+        "authorId": "6374641277defe8afce184a8",
         "tags": [
             "Beauty",
             "Bible"
@@ -32,9 +32,9 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third party Play store payments eases further with US tests",
+        "title": "Chetan Bhagat Book - 3",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
-        "authorId": "6371fd7da12b1f70beca1eba",
+        "authorId": "6374641277defe8afce184a8",
         "tags": [
             "Blog",
             "Beauty"
@@ -48,9 +48,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions--3 … no wait, not that instruction to lock everyone out of everything",
+        "title": "Chetan Bhagat Book - 4",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1eba",
+        "authorId": "6374641277defe8afce184a8",
         "tags": [
             "Bible",
             "Advice"
@@ -64,9 +64,9 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss-3 Masayoshi Son devotes himself to growing ARM for the next few years",
+        "title": "Herry Porter first",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
-        "authorId": "6371fd7da12b1f70beca1ebb",
+        "authorId": "6374641277defe8afce184a9",
         "tags": [
             "Bible",
             "Blog"
@@ -80,9 +80,9 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance-3 to third party Play store payments eases further with US tests",
+        "title": "Herry Porter second",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
-        "authorId": "6371fd7da12b1f70beca1ebb",
+        "authorId": "6374641277defe8afce184a9",
         "tags": [
             "Beauty",
             "Advice"
@@ -96,9 +96,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …4 no wait, not that instruction to lock everyone out of everything",
+        "title": "Herry Porter third",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebb",
+        "authorId": "6374641277defe8afce184a9",
         "tags": [
             "Bible",
             "Beauty"
@@ -112,9 +112,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …5 no wait, not that instruction to lock everyone out of everything",
+        "title": "Herry Porter fourth",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebb",
+        "authorId": "6374641277defe8afce184a9",
         "tags": [
             "Blog",
             "Bible"
@@ -128,9 +128,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …6 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 1",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebc",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Bible",
             "Advice"
@@ -144,9 +144,9 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi6 Son devotes himself to growing ARM for the next few years",
+        "title": "Arundhati Roy - 2",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
-        "authorId": "6371fd7da12b1f70beca1ebc",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Advice",
             "Blog"
@@ -159,9 +159,9 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to5 third party Play store payments eases further with US tests",
+        "title": "Arundhati Roy - 3",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
-        "authorId": "6371fd7da12b1f70beca1ebc",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Blog",
             "Bible"
@@ -174,9 +174,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …7 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 4",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebc",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Beauty",
             "Advertising"
@@ -190,9 +190,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …8 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 9",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1eba",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Advice",
             "Beauty"
@@ -206,9 +206,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions … 9no wait, not that instruction to lock everyone out of everything",
+        "title": "Rabindranath Tagor - 1",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebd",
+        "authorId": "6374641277defe8afce184ac",
         "tags": [
             "Bible",
             "Beauty"
@@ -222,9 +222,9 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son0 devotes himself to growing ARM for the next few years",
+        "title": "Rabindranath Tagor - 2",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
-        "authorId": "6371fd7da12b1f70beca1ebd",
+        "authorId": "6374641277defe8afce184ac",
         "tags": [
             "Advertising",
             "Bible"
@@ -238,9 +238,9 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third8 party Play store payments eases further with US tests",
+        "title": "Rabindranath Tagor - 3",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
-        "authorId": "6371fd7da12b1f70beca1ebd",
+        "authorId": "6374641277defe8afce184ac",
         "tags": [
             "Bible",
             "Advertising"
@@ -254,9 +254,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …11 no wait, not that instruction to lock everyone out of everything",
+        "title": "Rabindranath Tagor - 4",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebd",
+        "authorId": "6374641277defe8afce184ac",
         "tags": [
             "Bible",
             "Advertising"
@@ -270,9 +270,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …12 no wait, not that instruction to lock everyone out of everything",
+        "title": "Rabindranath Tagor - 5",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebd",
+        "authorId": "6374641277defe8afce184ac",
         "tags": [
             "Advice",
             "Blog"
@@ -285,9 +285,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …13 no wait, not that instruction to lock everyone out of everything",
+        "title": "Herry Porter five",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebb",
+        "authorId": "6374641277defe8afce184a9",
         "tags": [
             "Advertising",
             "Bible"
@@ -301,11 +301,12 @@
         "isPublished": false
     },
     {
-        "title": "Softbank boss Masayoshi Son4 devotes himself to growing ARM for the next few years",
+        "title": "Arundhati Roy - 5",
         "body": "Speech did not mention IPO, did say CEO's close involvement is good for humanity Japanese tech investment giant Softbank appears to be committed to keeping British-based chip designer Arm under its influence, after the parent company's CEO and chairman, Masayoshi Son, pledged his life to growing th,",
-        "authorId": "6371fd7da12b1f70beca1ebe",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
-            "Beauty"
+            "Beauty",
+            "Bible"
         ],
         "category": "business",
         "subcategory": [
@@ -315,9 +316,9 @@
         "isPublished": false
     },
     {
-        "title": "Google's resistance to third111 party Play store payments eases further with US tests",
+        "title": "Arundhati Roy - 6",
         "body": "Tune in to hear how it works on Spotify, or hook up with choice on Bumble Google's resistance to allowing third-party payment systems to touch its Play digital store appear to be ebbing away, with the search and ads giant last week announcing it has commenced tests of payment choice in the USA.…",
-        "authorId": "6371fd7da12b1f70beca1ebe",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Bible",
             "Beauty"
@@ -331,9 +332,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …124 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 7",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebe",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Beauty"
         ],
@@ -345,9 +346,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …32 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 8",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebe",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Blog",
             "Beauty"
@@ -361,9 +362,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …51 no wait, not that instruction to lock everyone out of everything",
+        "title": "Srinivasa Ramanujan - 1",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebc",
+        "authorId": "6374641277defe8afce184ab",
         "tags": [
             "Bible",
             "Advice"
@@ -377,9 +378,9 @@
         "isPublished": false
     },
     {
-        "title": "Just follow the instructions …42 no wait, not that instruction to lock everyone out of everything",
+        "title": "Arundhati Roy - 9",
         "body": "When RTFM goes bad Who, Me?  Welcome, gentle reader, to another instalment of Who, Me? in which Regizens recount records of rancor and remorse. This week, a tale of instructions designed to make life easy that did, in fact, nothing of the sort.…",
-        "authorId": "6371fd7da12b1f70beca1ebe",
+        "authorId": "6374641277defe8afce184aa",
         "tags": [
             "Beauty",
             "Blog"

@@ -1,16 +1,26 @@
 const authorModel = require("../Model/authorModel");
 const jwt = require("jsonwebtoken");
 const blogModel = require("../Model/blogModel");
+const bcrypt = require("bcrypt");
 
 exports.authorAuthentication = async (req, res, next) => {
   try {
     // CHECKING IF AUTHOR IS PRESENT
-    const author = await authorModel.findOne(req.body);
+    const author = await authorModel
+      .findOne({ email: req.body.email })
+      .select("+password");
+
     // IF AUTHOR PRESENT WE WILL ATTACH TOKEN IN REQ BODY AND PASS CALL TO NEXT FUNCTION
     if (author) {
-      const token = await jwt.sign(req.body, "ekta_rameshwar_jivan_shankar");
-      req.body.token = token;
-      next();
+      const userPass = author.password;
+      const bodyPass = req.body.password;
+      const passverify = await bcrypt.compare(bodyPass, userPass);
+
+      if (!author.isDeleted && passverify) {
+        const token = await jwt.sign(req.body, "ekta_rameshwar_jivan_shankar");
+        req.body.token = token;
+        next();
+      }
     } else {
       return res.status(401).json({
         status: false,
@@ -26,7 +36,6 @@ exports.authorAuthentication = async (req, res, next) => {
 };
 
 exports.authorAuthorisation = async (req, res, next) => {
-  console.log(req.params);
   try {
     // EXTRACTING TOKEN FROM HEADERS
     const token = req.headers.authorization

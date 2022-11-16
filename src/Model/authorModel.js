@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 // USING VALIDATOR LIBRARY
 const validator = require("validator");
+const bcrypt = require("bcrypt");
 
 const authorSchema = mongoose.Schema(
   {
@@ -9,12 +10,22 @@ const authorSchema = mongoose.Schema(
       required: [true, "Please submit author first name"],
       lowerCase: true,
       trim: true,
+      validate: {
+        validator: function (name) {
+          this.fname = name.split(" ")[0];
+        },
+      },
     },
     lname: {
       type: String,
       required: [true, "Please submit author last name"],
       lowerCase: true,
       trim: true,
+      validate: {
+        validator: function (name) {
+          this.lname = name.split(" ")[0];
+        },
+      },
     },
     title: {
       type: String,
@@ -35,9 +46,33 @@ const authorSchema = mongoose.Schema(
       require: [true, "Please enter a password"],
       minlength: 10,
       maxlength: 25,
+      select: false,
+    },
+    confirmPassword: {
+      type: String,
+      require: [true, "Please enter a password"],
+      select: false,
+      minlength: 10,
+      maxlength: 25,
+      validate: {
+        validator: function (el) {
+          return el === this.password;
+        },
+        message: "Please enter a valid password!",
+      },
+    },
+    isDeleted: {
+      type: Boolean,
+      default: false,
     },
   },
   { timeStamp: true }
 );
+
+authorSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+  this.password = await bcrypt.hash(this.password, 12);
+  this.confirmPassword = undefined;
+});
 
 module.exports = mongoose.model("Author", authorSchema);

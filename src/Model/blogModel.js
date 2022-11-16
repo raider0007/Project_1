@@ -32,7 +32,7 @@ const blogSchema = mongoose.Schema({
     type: [
       {
         type: String,
-        unique: true,
+        unique: [true, "This subcategory is already there!"],
       },
     ],
   },

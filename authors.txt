@@ -1,0 +1,50 @@
+[
+    {
+        "fname": "Jivan Toshniwal",
+        "lname": "Toshniwal Jivan",
+        "title": "Mr",
+        "email": "jivantoshniwal@gmail.com",
+        "password": "jivan@12345",
+        "confirmPassword": "jivan@12345"
+    },
+    {
+        "fname": "Chetan",
+        "lname": "Bhagat",
+        "title": "Mr",
+        "email": "chetanbhagat@gmail.com",
+        "password": "chetan@12345",
+        "confirmPassword": "chetan@12345"
+    },
+    {
+        "fname": "Joanne",
+        "lname": "Rowling",
+        "title": "Mrs",
+        "email": "jkrowling@gmail.com",
+        "password": "joanne@12345",
+        "confirmPassword": "joanne@12345"
+    },
+    {
+        "fname": "Arundhati",
+        "lname": "Roy",
+        "title": "Mrs",
+        "email": "arundhati@gmail.com",
+        "password": "arundhati@12345",
+        "confirmPassword": "arundhati@12345"
+    },
+    {
+        "fname": "Srinivasa",
+        "lname": "Ramanujan",
+        "title": "Mr",
+        "email": "srinivasa@gmail.com",
+        "password": "srinivasa@12345",
+        "confirmPassword": "srinivasa@12345"
+    },
+    {
+        "fname": "Rabindranath",
+        "lname": "Tagore",
+        "title": "Mr",
+        "email": "rabindranath@gmail.com",
+        "password": "rabindranath@12345",
+        "confirmPassword": "rabindranath@12345"
+    }
+]

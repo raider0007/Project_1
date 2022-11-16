@@ -11,7 +11,7 @@ router.post("/authors", authors.createAuthor);
 
 router.get("/authors", authors.getAllauthors);
 
-router.post("/blogs", authorAuthorisation, blogs.createBlog);
+router.post("/blogs", blogs.createBlog);
 
 router.get("/blogs", blogs.getAllBlogs);
 
