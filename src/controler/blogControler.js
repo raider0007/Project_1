@@ -65,7 +65,29 @@ exports.updateBlog = async (req, res) => {
   }
 };
 
-exports.deleteBlogQuery = async (req, res) => {
+exports.deleteBlog = async (req, res) => {
+  console.log(req.params);
+  try {
+    const blogs = await blogModel.findByIdAndUpdate(
+      req.params.blogId,
+      {
+        $set: { isDeleted: true },
+      },
+      { new: true }
+    );
+    res.status(200).json({
+      status: "success",
+      result: `${blogs.title} blog deleted success!`,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      error,
+    });
+  }
+};
+
+exports.deleteBlogMany = async (req, res) => {
   try {
     const blogs = await blogModel.updateMany(
       req.query,
@@ -73,8 +95,8 @@ exports.deleteBlogQuery = async (req, res) => {
       { new: true }
     );
     res.status(200).json({
-      status: `${blogs.modifiedCount} blog deleted success!`,
-      data: blogs,
+      status: "success",
+      result: `${blogs.modifiedCount} blog deleted success!`,
     });
   } catch (error) {
     res.status(404).json({

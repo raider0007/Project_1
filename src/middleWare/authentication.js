@@ -53,7 +53,7 @@ exports.authorAuthorisation = async (req, res, next) => {
       .findById(req.params.blogId)
       .populate("authorId");
     // DECODE OF TOKEN
-    const decode = await jwt.verify(token, "ekta_rameshwar_jivan_shankar");
+    const decode = await jwt.verify(token, process.env.SEC_STRING);
     // REMOVING FIELD iat FROM DECODE
     delete decode.iat;
     // CHEKING EMAIL OF TOKEN WITH THE BLOG AUTHOE EMAIL
@@ -65,6 +65,38 @@ exports.authorAuthorisation = async (req, res, next) => {
       });
     }
     // IF EVERYTHING OKAY PASSING CONTROLE TO NEXT FUNCTION
+    next();
+  } catch (error) {
+    res.status(401).json({
+      status: "authorisation fail!",
+      error,
+    });
+  }
+};
+
+exports.adminAuthorisation = async (req, res, next) => {
+  try {
+    const token = req.headers.authorization
+      ? req.headers.authorization.split(" ")[1]
+      : null;
+
+    if (!token) {
+      return res.status(404).json({
+        status: "Token is not there in header found!",
+        token: token,
+      });
+    }
+
+    const decode = jwt.verify(token, process.env.SEC_STRING);
+    console.log(decode);
+    const user = await authorModel.findOne({ email: decode.email });
+
+    if (!user.isAdmin) {
+      return res.status(401).json({
+        status: "authorisation fail",
+        msg: "please login with admin!",
+      });
+    }
     next();
   } catch (error) {
     res.status(401).json({
