@@ -12,9 +12,7 @@ exports.authorAuthentication = async (req, res, next) => {
 
     // IF AUTHOR PRESENT WE WILL ATTACH TOKEN IN REQ BODY AND PASS CALL TO NEXT FUNCTION
     if (author) {
-      const userPass = author.password;
-      const bodyPass = req.body.password;
-      const passverify = await bcrypt.compare(bodyPass, userPass);
+      const passverify = await bcrypt.compare(req.body.password, author.password);
 
       if (!author.isDeleted && passverify) {
         const token = await jwt.sign(req.body, `${process.env.SEC_STRING}`);
