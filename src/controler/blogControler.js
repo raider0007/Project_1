@@ -3,7 +3,6 @@ const authorModel = require("../Model/authorModel");
 
 exports.createBlog = async (req, res) => {
   try {
-    // await authorModel.findById(req.body.authorId);
     const blogs = await blogModel.create(req.body);
     res.status(201).json({
       status: true,
@@ -38,22 +37,21 @@ exports.updateBlog = async (req, res) => {
   req.body.publishedAt = new Date();
   try {
     const blog = await blogModel
-      .find({
+      .findOne({
         _id: req.params.blogId,
         isDeleted: false,
       })
       .populate("authorId");
-    //  NEED TO UPDATE
     for (const key in req.body) {
       if (key === "tags" || key === "subcategory") {
-        if (!blog[0][key].includes(req.body[key])) {
-          blog[0][key].push(req.body[key]);
+        if (!blog[key].includes(req.body[key])) {
+          blog[key].push(req.body[key]);
         }
       } else {
-        blog[0][key] = req.body[key];
+        blog[key] = req.body[key];
       }
     }
-    blog[0].save();
+    blog.save();
     res.status(200).json({
       status: `${blog ? "success" : `${req.params.blogId} id not found!`}`,
       data: blog,
@@ -72,7 +70,7 @@ exports.deleteBlog = async (req, res) => {
     const blogs = await blogModel.findByIdAndUpdate(
       req.params.blogId,
       {
-        $set: { isDeleted: true },
+        $set: { isDeleted: true, deletedAt: new Date() },
       },
       { new: true }
     );

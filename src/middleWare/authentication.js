@@ -88,7 +88,6 @@ exports.adminAuthorisation = async (req, res, next) => {
     }
 
     const decode = jwt.verify(token, process.env.SEC_STRING);
-    console.log(decode);
     const user = await authorModel.findOne({ email: decode.email });
 
     if (!user.isAdmin) {
