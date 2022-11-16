@@ -43,6 +43,7 @@ exports.updateBlog = async (req, res) => {
         isDeleted: false,
       })
       .populate("authorId");
+    //  NEED TO UPDATE
     for (const key in req.body) {
       if (key === "tags" || key === "subcategory") {
         if (!blog[0][key].includes(req.body[key])) {
@@ -66,7 +67,7 @@ exports.updateBlog = async (req, res) => {
 };
 
 exports.deleteBlog = async (req, res) => {
-  console.log(req.params);
+  // need to add delete time
   try {
     const blogs = await blogModel.findByIdAndUpdate(
       req.params.blogId,
