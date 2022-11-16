@@ -16,6 +16,6 @@ mongoose.connect("mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mong
 
 app.use('/', route);
 
-app.listen(process.env.PORT || 4000, function () {
-    console.log('running on port ' + (process.env.PORT || 4000))
+app.listen(process.env.PORT || 3000, function () {
+    console.log('running on port ' + (process.env.PORT || 3000))
 });

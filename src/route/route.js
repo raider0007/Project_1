@@ -11,8 +11,12 @@ router.get("/authors", author.getAuthor)
 
 //----------------------<<<ooo>>>> ----------------------------------
 
-router.post("/blogs1", blog.createBlog)
+router.post("/blog", blog.createBlog)
 router.get("/blogs", blog.getBlog)
 
 
+
+router.put("/blogis/:blogId",blog.updateBlog)
+router.delete("/blogs/:blogId",blog.DELETEblogData)
+router.delete("/blogs",blog.deleteunpublished)
 module.exports = router;
