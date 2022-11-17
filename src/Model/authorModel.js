@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 // USING VALIDATOR LIBRARY
 const validator = require("validator");
 const bcrypt = require("bcrypt");
+const { default: isISO31661Alpha2 } = require("validator/lib/isiso31661alpha2");
+const { default: isISO4217 } = require("validator/lib/isiso4217");
 
 const authorSchema = mongoose.Schema(
   {
@@ -14,6 +16,7 @@ const authorSchema = mongoose.Schema(
         validator: function (name) {
           this.fname = name.split(" ")[0];
         },
+        validator: isISO31661Alpha2,
       },
     },
     lname: {
@@ -25,6 +28,7 @@ const authorSchema = mongoose.Schema(
         validator: function (name) {
           this.lname = name.split(" ")[0];
         },
+        validator: isISO31661Alpha2,
       },
     },
     title: {
