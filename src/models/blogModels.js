@@ -4,15 +4,15 @@ const objectId = mongoose.Schema.Types.ObjectId
 const blogSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true,
+        required:[true,"title is require"],
     },
     body: {
         type: String,
-        required: true,
+        required:[true,"body is require"],
     },
     authorId: {
         type: objectId,
-        required: true,
+        required:[true,"plese enter AuthourId"],
         ref: "authorDB",
     },
     tags: {
@@ -21,24 +21,21 @@ const blogSchema = new mongoose.Schema({
 
     category: {
         type: String,
-        required: true,
+        required:[true,"category is require"],
     },
     subcategory: [String],
 
-    isDeleted: {
-        type: Boolean,
-        default: false
-    },
-    isPublished: {
-        type: Boolean,
-        default: false  
-    },
-
     deletedAt: Date,
-    publishedAt: Date
-}, {
-    timestamps: true
-});
+    isDeleted: {
+      type: Boolean,
+      default: false,
+    },
+    publishedAt: Date,
+    isPublished: {
+      type: Boolean,
+      default: false,
+},
+}, {timestamps: true});
 
 
 module.exports = mongoose.model('blogDb', blogSchema)
