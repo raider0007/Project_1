@@ -53,7 +53,7 @@ const loginAuthore = async function (req, res) {
     password: passwor
   })
   if (!status) return res.status(400).send({
-    msg: "s"
+    msg: "Author is not found"
   })
 
   let tockn = jwt.sign({

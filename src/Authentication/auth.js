@@ -2,8 +2,6 @@ const jwt = require("jsonwebtoken")
 
 
 
-
-
 const Authentication = async function (req, res, next) {
 
   try {
@@ -13,6 +11,8 @@ const Authentication = async function (req, res, next) {
       message: "Token is mandatory"
     })
 
+    // verify the tocken
+    
     let decodedToken = jwt.verify(token, "My first Project with My freind")
     if (!decodedToken) {
       return res.status(401).send({
@@ -20,8 +20,9 @@ const Authentication = async function (req, res, next) {
         message: "token is invalid "
       })
     }
-    console.log(decodedToken)
     req.id = decodedToken.userId
+    // console.log(decodedToken)
+
     next()
   } catch (error) {
     res.status(500).send({

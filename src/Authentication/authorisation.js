@@ -1,5 +1,9 @@
 const blogModels = require("../models/blogModels");
 
+
+
+//              <<<======authorisation====>>>
+
 const autheraise = async function (req, res, next) {
 
     let blogId = req.params.blogId
@@ -13,10 +17,8 @@ const autheraise = async function (req, res, next) {
 
         let authorId = auth.authorId.toString()
         let authorid = req.id
-        console.log({
-            authorId,
-            authorid
-        })
+        // console.log({authorId,authorid
+        // })
         if (authorId != authorid) return res.status(400).send({
             status: false,
             msg: "unauthorised user"
@@ -38,21 +40,13 @@ const autheraise = async function (req, res, next) {
             const element = blog[index];
             if (element.authorId == author) {
                 count++;
-                next()
             }
             if (count == 0) return res.status(400).send({
                 status: false,
                 msg: "unauhorised blogs author"
             })
-
-
-        }
-
-
-
-
-
-    }
+            next()
+}}
 }
 
 module.exports.autheraise = autheraise
