@@ -15,7 +15,7 @@ router.get("/authors", author.getAuthor)
 //                             <<==Blog==>>       <<===>><<===>>
 
 router.post("/blog", blog.createBlog)
-router.get("/blogs",Authentication,autheraise, blog.getBlog)
+router.get("/blogs",Authentication,blog.getBlog)
 
 router.put("/blogis/:blogId",Authentication,autheraise,blog.updateBlog)
 router.delete("/blogs/:blogId",Authentication,autheraise,blog.DELETEblogData)

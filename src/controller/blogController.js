@@ -88,7 +88,7 @@ const DELETEblogData = async function (req, res) {
     res.status(200).send({msg:blogModel})
 
   } catch (err) {
-    return res.status(500).send({
+    return res.status(500).send({   
       status: false,
       error: err.message
     })
