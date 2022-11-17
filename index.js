@@ -5,17 +5,10 @@ const app = express();
 require("dotenv").config({ path: "./config.env" });
 app.use(express.json());
 
-
-// mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/Shankar_DB
-// mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/skDB?retryWrites=true&w=majority
 mongoose
-  .connect(
-    // "mongodb+srv://Project_1:Xr1m54ZBz5hgLJbP@cluster0.wttupro.mongodb.net/skDB?retryWrites=true&w=majority",
-    `${process.env.MONGODB}Project_1`,
-    {
-      useNewUrlParser: true,
-    }
-  )
+  .connect(`${process.env.MONGODB}`, {
+    useNewUrlParser: true,
+  })
   .then(() => console.log("Connection succussfull!"))
   .catch(() => console.log("Connection fail!!"));
 

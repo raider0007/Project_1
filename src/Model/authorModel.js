@@ -16,7 +16,7 @@ const authorSchema = mongoose.Schema(
         validator: function (name) {
           this.fname = name.split(" ")[0];
         },
-        validator: isISO31661Alpha2,
+        // validator: isISO31661Alpha2,
       },
     },
     lname: {
@@ -28,7 +28,7 @@ const authorSchema = mongoose.Schema(
         validator: function (name) {
           this.lname = name.split(" ")[0];
         },
-        validator: isISO31661Alpha2,
+        // validator: isISO31661Alpha2,
       },
     },
     title: {

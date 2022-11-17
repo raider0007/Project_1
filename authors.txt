@@ -5,7 +5,8 @@
         "title": "Mr",
         "email": "jivantoshniwal@gmail.com",
         "password": "jivan@12345",
-        "confirmPassword": "jivan@12345"
+        "confirmPassword": "jivan@12345",
+        "isAdmin": true
     },
     {
         "fname": "Chetan",
