@@ -7,7 +7,6 @@ const {
   authorAuthorisation,
   adminAuthorisation,
 } = require("../middleWare/authentication");
-
 router.post("/authors", authors.createAuthor);
 
 router.get("/authors", authors.getAllauthors);
