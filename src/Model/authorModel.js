@@ -10,6 +10,7 @@ const authorSchema = mongoose.Schema(
       required: [true, "Please submit author first name"],
       lowerCase: true,
       trim: true,
+      // WE HAVE FNAME AND LNAME SO AVOID FULL NAME AND NUMBERS IN NAME COLUMN THIS VALIDATION IS DONE
       validate: {
         validator: (name) => validator.isAlpha(name, ["en-US"]),
         message: "A first name must only contain characters without space!",
@@ -21,6 +22,7 @@ const authorSchema = mongoose.Schema(
       lowerCase: true,
       trim: true,
       validate: {
+        // WE HAVE FNAME AND LNAME SO AVOID FULL NAME AND NUMBERS IN NAME COLUMN THIS VALIDATION IS DONE
         validator: (name) => validator.isAlpha(name, ["en-US"]),
         message: "A last name must only contain characters without space!",
       },
@@ -52,6 +54,7 @@ const authorSchema = mongoose.Schema(
       select: false,
       minlength: 10,
       maxlength: 25,
+      // MATCH OF PASSWORD AND CONFIRM PASSWORD BY USING VALIDATOR 
       validate: {
         validator: function (el) {
           return el === this.password;
@@ -63,6 +66,7 @@ const authorSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    // IS ADMIN FIELD ADDED FOR SPECIAL ACCESS
     isAdmin: {
       type: Boolean,
       default: false,
@@ -71,9 +75,11 @@ const authorSchema = mongoose.Schema(
   { timeStamp: true }
 );
 
+// BCRYPT HASH METHOD IS USED BEFORE SAVE THE USER PASSWORD IN DATA BASE TO AVOID PASSWORD LEAKAGE
 authorSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   this.password = await bcrypt.hash(this.password, 12);
+  // CONFIRM-PASSWORD IS SET TO UNDEFINED AFTER HASHING FOR STOP LEAKAGE OF PASSWORD
   this.confirmPassword = undefined;
 });
 
