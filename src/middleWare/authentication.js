@@ -42,9 +42,7 @@ exports.authorAuthentication = async (req, res, next) => {
 exports.authorAuthorization = async (req, res, next) => {
   try {
     // EXTRACTING TOKEN FROM HEADERS
-    const token = req.headers.authorization
-      ? req.headers.authorization.split(" ")[1]
-      : null;
+    const token = req.headers["x-api-key"];
 
     // IF TOKEN IS NULL THEN RETURNING RESPONSE
     if (!token) {

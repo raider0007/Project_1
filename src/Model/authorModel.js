@@ -44,24 +44,9 @@ const authorSchema = mongoose.Schema(
     password: {
       type: String,
       require: [true, "Please enter a password"],
-      minlength: 10,
-      maxlength: 25,
       select: false,
     },
-    confirmPassword: {
-      type: String,
-      require: [true, "Please enter a password"],
-      select: false,
-      minlength: 10,
-      maxlength: 25,
-      // MATCH OF PASSWORD AND CONFIRM PASSWORD BY USING VALIDATOR 
-      validate: {
-        validator: function (el) {
-          return el === this.password;
-        },
-        message: "Please enter a valid password!",
-      },
-    },
+
     isDeleted: {
       type: Boolean,
       default: false,
@@ -79,8 +64,6 @@ const authorSchema = mongoose.Schema(
 authorSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   this.password = await bcrypt.hash(this.password, 12);
-  // CONFIRM-PASSWORD IS SET TO UNDEFINED AFTER HASHING FOR STOP LEAKAGE OF PASSWORD
-  this.confirmPassword = undefined;
 });
 
 module.exports = mongoose.model("Author", authorSchema);
