@@ -10,8 +10,8 @@ exports.createBlog = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({
-      status: "error",
-      error: error.message,
+      status: false,
+      msg: error.message,
     });
   }
 };
@@ -22,21 +22,21 @@ exports.getAllBlogs = async (req, res) => {
     const blogs = await blogModel.find(req.query).populate("authorId");
     res.status(200).json({
       status: true,
-      result: `${blogs.length} blogs found!`,
-      blogs,
+      data: {
+        result: `${blogs.length} blogs found!`,
+        blogs,
+      },
     });
   } catch (error) {
     res.status(404).json({
-      status: "Not found",
+      status: false,
       error: error.message,
     });
   }
 };
 
-
 // UPDATION OF BLOG AFTER A SUCCESSFUL AUTHORIZATION
 exports.updateBlog = async (req, res) => {
-
   // ADDING UPDATION TIME AND PUBLISHING THE BLOG
   req.body.isPublished = true;
   req.body.publishedAt = new Date();
@@ -49,11 +49,10 @@ exports.updateBlog = async (req, res) => {
         isDeleted: false,
       })
       .populate("authorId");
-    
+
     // IF UPDATION IN TAGS OR SUBCATEGORY THE WE HAVE TO PUSH IF THEY ARE NOT PRESENT
     for (const key in req.body) {
       if (key === "tags" || key === "subcategory") {
-
         // HERE CHECKING IF THEY ARE ALREADY PRESENT USING JAVASCRIPT INCLUDES METHOD
         if (!blog[key].includes(req.body[key])) {
           blog[key].push(req.body[key]);
@@ -71,8 +70,8 @@ exports.updateBlog = async (req, res) => {
     });
   } catch (error) {
     res.status(404).json({
-      status: "fail",
-      error,
+      status: false,
+      msg: error.message,
     });
   }
 };
@@ -88,13 +87,15 @@ exports.deleteBlog = async (req, res) => {
       { new: true }
     );
     res.status(200).json({
-      status: "success",
-      result: `${blogs.title} blog deleted success!`,
+      status: true,
+      data: {
+        result: `${blogs.title} blog deleted success!`,
+      },
     });
   } catch (error) {
     res.status(404).json({
-      status: "fail",
-      error,
+      status: false,
+      msg: error.message,
     });
   }
 };
@@ -108,13 +109,15 @@ exports.deleteBlogMany = async (req, res) => {
       { new: true }
     );
     res.status(200).json({
-      status: "success",
-      result: `${blogs.modifiedCount} blog deleted success!`,
+      status: true,
+      data: {
+        result: `${blogs.modifiedCount} blog deleted success!`,
+      },
     });
   } catch (error) {
     res.status(404).json({
-      status: "fail",
-      error,
+      status: false,
+      msg: error.message,
     });
   }
 };
