@@ -1,10 +1,11 @@
 const authorModel = require("../Model/authorModel");
 
+// REGISTRATION OF NEW AUTHOR
 exports.createAuthor = async (req, res) => {
   try {
     const authors = await authorModel.create(req.body);
     res.status(201).json({
-      status: "succesful",
+      status: "successful",
       data: authors,
     });
   } catch (error) {
@@ -15,6 +16,7 @@ exports.createAuthor = async (req, res) => {
   }
 };
 
+// API TO FIND ALL AUTHORS 
 exports.getAllauthors = async (req, res) => {
   try {
     const authors = await authorModel.find();
@@ -31,7 +33,8 @@ exports.getAllauthors = async (req, res) => {
   }
 };
 
-exports.loginControler = (req, res) => {
+// LOGIN API -> ALLOW AFTER SUCCESSFUL AUTHENTICATION OF USER NAME AND PASSWORD AND THEN RECEIVE A JWT TOKEN
+exports.loginController = (req, res) => {
   res.status(200).json({
     status: "login success",
     token: req.body.token,

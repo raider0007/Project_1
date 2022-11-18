@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 // USING VALIDATOR LIBRARY
 const validator = require("validator");
 const bcrypt = require("bcrypt");
-const { default: isISO31661Alpha2 } = require("validator/lib/isiso31661alpha2");
-const { default: isISO4217 } = require("validator/lib/isiso4217");
 
 const authorSchema = mongoose.Schema(
   {
@@ -13,10 +11,8 @@ const authorSchema = mongoose.Schema(
       lowerCase: true,
       trim: true,
       validate: {
-        validator: function (name) {
-          this.fname = name.split(" ")[0];
-        },
-        // validator: isISO31661Alpha2,
+        validator: (name) => validator.isAlpha(name, ["en-US"]),
+        message: "A first name must only contain characters without space!",
       },
     },
     lname: {
@@ -25,10 +21,8 @@ const authorSchema = mongoose.Schema(
       lowerCase: true,
       trim: true,
       validate: {
-        validator: function (name) {
-          this.lname = name.split(" ")[0];
-        },
-        // validator: isISO31661Alpha2,
+        validator: (name) => validator.isAlpha(name, ["en-US"]),
+        message: "A last name must only contain characters without space!",
       },
     },
     title: {
