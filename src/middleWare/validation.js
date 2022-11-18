@@ -7,8 +7,8 @@ exports.isValidAuthor = async (req, res, next) => {
     next();
   } catch (error) {
     res.status(500).json({
-      status: "error",
-      msg: error.message,
+      status: false,
+        msg: error.message,
     });
   }
 };

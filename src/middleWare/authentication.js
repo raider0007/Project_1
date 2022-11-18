@@ -33,7 +33,7 @@ exports.authorAuthentication = async (req, res, next) => {
   } catch (error) {
     res.status(500).json({
       status: false,
-      error,
+      msg: error.message,
     });
   }
 };
@@ -49,8 +49,8 @@ exports.authorAuthorization = async (req, res, next) => {
     // IF TOKEN IS NULL THEN RETURNING RESPONSE
     if (!token) {
       return res.status(404).json({
-        status: "Token is not there in header found!",
-        token: token,
+        status: false,
+        msg: "Token is not there in header found!",
       });
     }
 
@@ -68,8 +68,8 @@ exports.authorAuthorization = async (req, res, next) => {
     // IF IT FALSE RETURN AUTHORIZATION FAIL ERROR
     if (decode.email !== blog.authorId.email) {
       return res.status(401).json({
-        status: "authorization fail!",
-        msg: "Please login whit correct id!",
+        status: false,
+        msg: "authorization fail Please login whit correct id!",
       });
     }
 
@@ -77,8 +77,8 @@ exports.authorAuthorization = async (req, res, next) => {
     next();
   } catch (error) {
     res.status(401).json({
-      status: "authorization fail!",
-      error,
+      status: false,
+      error: error.message,
     });
   }
 };
@@ -92,8 +92,8 @@ exports.adminAuthorization = async (req, res, next) => {
 
     if (!token) {
       return res.status(404).json({
-        status: "Token is not there in header found!",
-        token: token,
+        status: false,
+        msg: "Token is not there in header found!",
       });
     }
 
@@ -103,15 +103,15 @@ exports.adminAuthorization = async (req, res, next) => {
     // IS THE USER IS NOT A ADMIN THEN RETURN WITH RESPONSE OF AUTHORIZATION FAIL
     if (!user.isAdmin) {
       return res.status(401).json({
-        status: "authorization fail",
-        msg: "please login with admin!",
+        status: false,
+        msg: "authorization fail please login with admin!",
       });
     }
     next();
   } catch (error) {
     res.status(401).json({
-      status: "authorization fail!",
-      error,
+      status: false,
+      error: error.message,
     });
   }
 };

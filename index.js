@@ -20,7 +20,7 @@ app.use("/", route);
 // GLOBAL ROUTE ERROR HANDLER
 app.use("*", (req, res, next) => {
   res.status(404).json({
-    status: "error",
+    status: false,
     msg: `can not find ${req.originalUrl} on this server`,
   });
 });
